@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../weatherdash/assets/style.css">
 
     <title>Document</title>
 </head>
+
 <body>
-    
-</body>
+    <header>
+        <nav class="navbar navbar-light p-5" style="background-color: #e3f2fd;">
+            <div class="container">
+                <h1 class="navbar-center">Weather Dashboard</h1>
+            </div>
+        </nav>
+    </header>
+
+    <div class="row">
+        <div class="sidebar col-3 pt-0">
+            <h4>Search for a city:</h4>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" id="search" type="submit">Search</button>
+        </div>
+
+
+        <div class="container-fluid mt-3 col-6" id = "contain-1" >
+            <div class="justify-content-md-center">
+                <div>
+                    Variable width content
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <div class = "container-fluid">
+    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    </div>
+    </body>
+        <!-- <div class = "container">
+        <div class= "row justify-content-md-center">
+            <div class = "col">col 1</div>
+        </div>
+        <div class = "row">
+            <div class = "col">col 2</div>
+        </div>
+
+    </div> -->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+        <script src="../weatherdash/assets/script.js"></script>
+
 </html>

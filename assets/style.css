@@ -1,0 +1,32 @@
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+   
+}
+
+ .sidebar{
+        height: 100%;  
+        width: 320px; /* Set the width of the sidebar */
+        position: fixed;
+        /* z-index: 2; Stay on top  */
+         top: -1; 
+        left: 0; 
+         background-color: gainsboro;
+        overflow-x: hidden;  
+        padding-top: 30px; 
+       
+       } 
+
+#contain-1{
+
+    height: 300px;
+    border: 1px dashed gray;
+  
+}
+
+      
+    
+      
+      
+
