@@ -26,6 +26,8 @@ $("#find-city").on("click", function(event) {
         var cityName = []
         var lat = response.coord.lat
         var lon = response.coord.lon
+        var iconMain = "http://api.openweathermap.org/img/w/" + response.weather[0].icon +".png";
+        $("#iconMain").attr("src", iconMain);
         
         function uvI (){
             var uvURL = "http://api.openweathermap.org/data/2.5/uvi?appid=c27e17b2075378ac79414f96f80ea46b&lat=" + lat + "&lon=" + lon;

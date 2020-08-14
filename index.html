@@ -20,38 +20,41 @@
             <h1 class="navbar-center">Weather Dashboard</h1>
         </nav>
     </header>
-    
+
     <div class="container-fluid" id="contain-1">
         <div class="row">
             <div class="sidebar col-3 pt-0">
                 <h4>Search for a city:</h4>
                 <!-- This form will be where users input the city -->
-                <form class="form-inline my-2 my-lg-0" >
-                    <input class="form-control mr-sm-2" type="search"id="city-search" >
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" id="city-search">
                     <!-- button will trigger AJAX call -->
                     <button><i class="fas fa-search" id="find-city"></i></button>
                 </form>
             </div>
             <div class="col-9">
                 <div class="row col-12 card">
-                    <h2 class="city">City</h2>
+                    <div class="row">
+                        <h2 class="city">City</h2>
+                        <img src="" id="iconMain">
+                    </div>
                     <p class="temp">temps is alot</p>
                     <p class="humidity">its hot</p>
                     <p class="windspeed">wow</p>
                     <p class="uv">ouch</p>
                 </div>
                 <div class="container">
-                            <h3>5-Day Forecast:</h3>
-                            <div class="card-deck">
-                                <!-- <div class = "card bg-primary text-white"></div> -->
-                            </div>
+                    <h3>5-Day Forecast:</h3>
+                    <div class="card-deck">
+                        <!-- <div class = "card bg-primary text-white"></div> -->
+                    </div>
                 </div>
-                </div>
+            </div>
         </div>
     </div>
 
 </body>
-<script src= "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 <script src="../weatherdash/assets/script.js"></script>
 
 </html>
