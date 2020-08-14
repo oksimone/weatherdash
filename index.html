@@ -8,8 +8,8 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../weatherdash/assets/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
-    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Weather Dash</title>
 </head>
 
 <body>
@@ -24,9 +24,11 @@
     <div class="row">
         <div class="sidebar col-3 pt-0">
             <h4>Search for a city:</h4>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                 <button><i class="fas fa-search"></i></button>
+            <!-- This form will be where users input the city -->
+            <form class="form-inline my-2 my-lg-0" id = "city-search">
+                <input class="form-control mr-sm-2" type="search">
+                <!-- button will trigger AJAX call -->
+                 <button><i class="fas fa-search" id = "find-city"></i></button>
                 
         </div>
 
@@ -34,18 +36,25 @@
         <div class="container-fluid mt-3 col-7 pr-4" id="contain-1">
             <div class="justify-content-md-center">
                 <div>
-                    Variable width content
+                    <h2 class ="city"></h2>
+                    <br>
+                    <p class = "temp"></p>
+                    <p class = "humidity"></p>
+                    <p class = "windspeed"></p>
+                    <p class = "uv"></p>
                 </div>
 
             </div>
         </div>
 
     </div>
+    
 
     <div class="container px-5 mr-2 mt-3" id class = "cards" style="width:fit-content;">
+        <h3>5-Day Forecast:</h3>
         <div class="row">
             <div class="col-2">
-                <div class="card" style="width: 11rem;">
+                <div class="card" style="width: 11rem;" id="card-1">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Quick sample text to create the card title and make up the body of the
@@ -56,7 +65,7 @@
             </div>
 
             <div class="col-2">
-                <div class="card" style="width: 11rem;">
+                <div class="card" style="width: 11rem;" id="card-2">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Quick sample text to create the card title and make up the body of the
@@ -67,7 +76,7 @@
             </div>
 
             <div class="col-2">
-                <div class="card" style="width: 11rem;">
+                <div class="card" style="width: 11rem;" id="card-3">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Quick sample text to create the card title and make up the body of the
@@ -78,7 +87,7 @@
             </div>
 
             <div class="col-2">
-                <div class="card" style="width: 11rem;">
+                <div class="card" style="width: 11rem;" id= "card-4">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Quick sample text to create the card title and make up the body of the
@@ -89,7 +98,7 @@
             </div>
 
             <div class="col-2">
-                <div class="card" style="width: 11rem;">
+                <div class="card" style="width: 11rem;" id="card-5">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Quick sample text to create the card title and make up the body of the
@@ -98,17 +107,6 @@
                     </div>
                 </div>
             </div>
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             
         </div>
@@ -116,25 +114,5 @@
     </div>
 
 </body>
-<!-- <div class = "container">
-        <div class= "row justify-content-md-center">
-            <div class = "col">col 1</div>
-        </div>
-        <div class = "row">
-            <div class = "col">col 2</div>
-        </div>
-
-    </div> -->
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-<script src="../weatherdash/assets/script.js"></script>
-
+<script src= "../weatherdash/assets/script.js"></script>
 </html>
