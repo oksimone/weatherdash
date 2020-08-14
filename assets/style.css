@@ -7,12 +7,12 @@
 
  .sidebar{
         height: 100%;  
-        width: 320px; /* Set the width of the sidebar */
+        width: 300px; /* Set the width of the sidebar */
         position: fixed;
         /* z-index: 2; Stay on top  */
-         top: -1; 
+        top: -1; 
         left: 0; 
-         background-color: gainsboro;
+        background-color: gainsboro;
         overflow-x: hidden;  
         padding-top: 30px; 
        
@@ -21,12 +21,21 @@
 #contain-1{
 
     height: 300px;
+    margin-right: 16.5%;
     border: 1px dashed gray;
+    
   
 }
-
-      
+   
+ .card-body{
+     background-color: lightcyan;
     
+ }
       
-      
+  #cards{
+    margin-right: 10px;
+    
+    
+
+  }    
 
