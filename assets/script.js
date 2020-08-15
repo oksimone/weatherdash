@@ -43,4 +43,41 @@ $("#find-city").on("click", function(event) {
         uvI()
         }
       );
+
+      $.get("https://api.openweathermap.org/data/2.5/forecast?q=" + city +"&appid=" + weatherAPIKey)
+      .then(function(res){
+          var k = 1;
+          for(var i = 0; i < res.list.length; i++){
+              var curr = res.list[i]
+              if(curr.dt_txt.includes("12:00")){
+               var cardDiv =  $("<div>").attr("class", "card card bg-primary text-white");
+               $(".card-deck").append(cardDiv);
+               var date = $("<h6>").text((moment().add(k, "days").format("MM/DD/YYYY")));
+               cardDiv.append(date);
+               k++;
+               var far2 = (curr.main.temp - 273.15) * 1.80 + 32
+               var p1 = $("<p>").text("Temperature " + far2.toFixed(2))
+               cardDiv.append(p1)
+                var p2 = $("<p>").text("Humidity " +curr.main.humidity)
+                cardDiv.append(p2);
+
+                
+                var iconMain2 = "http://api.openweathermap.org/img/w/" + response.weather[0].icon +".png";
+        $("#iconMain").attr("src", iconMain);
+                  console.log(curr)
+                //   curr.push(cards)
+                
+  
+  
+              }
+          }
+  
+      })
+
+
+
+
+
+
+
   });
