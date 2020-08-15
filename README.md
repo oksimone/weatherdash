@@ -10,6 +10,7 @@ Weather Dashboard is assignment number 6 of my Full-Stack Bootcamp and this was 
     - and, the assignement should show buttons of the previously searched city with the forecast of that city
 
 When I first started the assignment, I didn't think to code the HTML dynamically through javascript. So, I started hardcoding my sidebar and card decks into the HTML. Then realized later that coding it in a way that wasn't dynamic would have made the assignment much more difficult than it needed to be. The first couple of screenshots I took was when I was coding it not dynamically, and the last photo is my final product. 
+https://oksimone.github.io/weatherdash/.
 
 ![](assets/screenshot1.png)
 ![](assets/screenshot2.png)
