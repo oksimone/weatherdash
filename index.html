@@ -26,11 +26,16 @@
             <div class="sidebar col-3 pt-0 mt-2">
                 <h4>Search for a city:</h4>
                 <!-- This form will be where users input the city -->
-                <form class="form-inline my-2 my-lg-0">
+                <form class="form-inline my-2 my-lg-0" id = "cityForm">
                     <input class="form-control mr-sm-2" type="search" id="city-search">
                     <!-- button will trigger AJAX call -->
+
                     <button><i class="fas fa-search" id="find-city"></i></button>
                 </form>
+                <!-- rendered previous city searches buttons will be dumped here -->
+                <ul id = "oldcities">
+                    
+                </ul>
             </div>
             <div class="col-9 mt-2">
                 <div class="row col-12 card">
